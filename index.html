@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'Inscription</title>
+    <link href="style.css" rel="stylesheet">
+    <style media="screen, print">
+        @font-face {
+            font-family: Combat;
+            src: url(font/Combat.otf);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">"L’aide quotidienne, en toute simplicité"</h1>
+
+    <div class="main">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="Logo">
+        </div>
+
+        <!-- Formulaire -->
+        <form action="action_page.php">
+            <div class="container">
+                <h2>Inscrivez-vous à notre conférence</h2>
+                <p>Description..</p>
+            </div>
+            
+            <div class="container" style="background-color:rgba(255, 255, 255, 0.989)">
+                <input type="text" placeholder="Nom" name="name" id="name" required>
+                <input type="text" placeholder="Prénom" name="firstname" id="firstname" required>
+                <input type="text" placeholder="Adresse mail" name="mail" id="mail" required>
+                <label>
+                    <input type="checkbox" checked="checked" name="subscribe"> S'inscrire à notre newsletter.
+                </label>
+            </div>
+
+            <div class="container">
+                <input type="submit" value="S'inscrire">
+            </div>
+        </form>
+    </div>
+
+    <marquee behavior="scroll" direction="right" scrollamount="40">
+        <img src="./assets/abeilles.png" alt="Animation Abeilles">
+    </marquee>
+    <script src="effect.js"></script>
+</body>
+
+<footer class="footer">
+    <div class="footer-left">
+        <p class="footer-links">
+            <a href="https://www.instagram.com/allo_voisin/profilecard/?igsh=MWVmYWpxcTlzeHRzZw==">Instagram</a>
+            <a href="#">Facebook</a>
+        </p>
+        <p>Allo & Vous &copy; 2024</p>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,138 @@
+body {
+    background-color: #474747;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+  font-family: Combat;  
+  font-weight: bold;
+  color: #ececec;
+  text-align: center;
+  padding: 30px 10px 0px 10px;
+  display: inline-block;                /* modèle de boîte en ligne */
+  white-space: nowrap;
+  animation: defile 8s linear infinite;
+
+  white-space: nowrap;
+
+}
+
+@keyframes defile {
+
+  from { transform: translateX(220%); }
+
+  to { transform: translateX(-100%); }  
+
+}
+
+.main {
+  display: flex;
+  flex: 2 1 auto;
+  padding: 100px 10px 100px 10px;
+}
+
+/* Style the form element with a border around it */
+form {
+  border-radius: 40px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+
+/* Add some padding and a grey background color to containers */
+.container {
+  padding: 20px;
+  background-color: #f1f1f1;
+  display: block;
+  border-radius: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  font-family: Combat;
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #454545;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border-radius: 40px;
+  border-right: 1rem solid rgb(218, 22, 22); /* bordure droite js mise de base */
+  transition: border-right-color 0.3s ease; /* anim */
+}
+
+
+.input-valid {
+  border-right-color: rgb(34, 197, 94); /* bordure droite qui change en vert lros de l'input */
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: rgb(87, 212, 133);
+  color: rgb(46, 46, 46);
+  border: none;
+  border-radius: 40px;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+.footer {
+background-color: #292c2f;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+width: 100%;
+text-align: left;
+font: normal 16px sans-serif;
+padding: 45px 50px;
+position: absolute;
+bottom:900;
+}
+
+.footer .footer-left p {
+color: #8f9296;
+font-size: 14px;
+margin: 0;
+}
+
+.footer p.footer-links {
+font-size: 18px;
+font-weight: bold;
+color: #ffffff;
+margin: 0 0 10px;
+padding: 0;
+transition: ease .25s;
+}
+
+.footer p.footer-links a {
+display: inline-block;
+line-height: 1.8;
+text-decoration: none;
+color: inherit;
+transition: ease .25s;
+}
+
+.footer .footer-links a:before {
+content: "·";
+font-size: 20px;
+left: 0;
+color: #fff;
+display: inline-block;
+padding-right: 5px;
+}
+
+.footer .footer-links .link-1:before {
+content: none;
+}
+
