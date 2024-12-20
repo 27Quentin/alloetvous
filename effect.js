@@ -1,24 +1,12 @@
-// Fonction pour appliquer l'effet de changement de bordure sur chaque champ texte
-document.addEventListener("DOMContentLoaded", function () {
-    // Sélectionner chaque input par son ID
-    const nameInput = document.getElementById("name");
-    const firstnameInput = document.getElementById("firstname");
-    const mailInput = document.getElementById("mail");
+const input = document.getElementById('name');
 
-    // Fonction pour ajouter ou supprimer la classe .input-valid
-    function handleInputChange(input) {
-        input.addEventListener("input", function () {
-            // Si le champ n'est pas vide, on ajoute la classe .input-valid
-            if (input.value.trim() !== "") {
-                input.classList.add("input-valid");
-            } else {
-                input.classList.remove("input-valid");
-            }
-        });
-    }
-
-    // Appliquer la fonction à chaque champ
-    handleInputChange(nameInput);
-    handleInputChange(firstnameInput);
-    handleInputChange(mailInput);
+// Écouteur d'événement pour détecter la saisie dans le champ
+input.addEventListener('input', () => {
+  if (input.value.length > 0) {
+    // Change la couleur de la bordure droite quand du texte est saisi
+    input.style.borderRightColor = 'rgb(22, 218, 22)'; // Exemple : vert
+  } else {
+    // Remet la couleur de la bordure droite à la valeur par défaut
+    input.style.borderRightColor = 'rgb(218, 22, 22)'; // Rouge par défaut
+  }
 });
